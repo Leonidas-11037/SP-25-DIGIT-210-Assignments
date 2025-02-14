@@ -29,27 +29,8 @@
             
         </xsl:analyze-string>
     </xsl:template>
-    
-    <xsl:template match="sp[child::info]/text()[1][contains(., ':')]">
-        <xsl:analyze-string select="." regex="(^[A-Z ].+?):">
-            <xsl:matching-substring>
-                <speaker><xsl:value-of select="regex-group(1)"/></speaker>
-            </xsl:matching-substring>
-            <xsl:non-matching-substring>
-                <xsl:value-of select="."/> 
-            </xsl:non-matching-substring>
-        </xsl:analyze-string>
-    </xsl:template>
-    
-    <xsl:template match="sp[child::info]/text()[1][not(contains(., ':'))]">
-        <xsl:analyze-string select="." regex="(^[A-Z ].+?)\s$">
-            <xsl:matching-substring>
-                <speaker><xsl:value-of select="regex-group(1)"/></speaker>
-            </xsl:matching-substring>
-            <xsl:non-matching-substring>
-                <xsl:value-of select="."/> 
-            </xsl:non-matching-substring>
-        </xsl:analyze-string>
+    <xsl:template match="info/text()">
+        
     </xsl:template>
     
 </xsl:stylesheet>

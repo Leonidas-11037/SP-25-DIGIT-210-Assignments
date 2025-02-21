@@ -34,7 +34,7 @@ p.mono {
 section.out{
     background:purple
 }
-section.inner {
+section.outer {
     font-family: roman, 'times new roman', times, serif;
     background: black
     

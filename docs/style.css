@@ -1,3 +1,7 @@
+p.pad{
+    padding-left: 5em;
+    padding-right: 5em
+}
 body {
     background: #d889fa;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -26,6 +30,14 @@ section {
 p.mono {
     background:black;
     color:white
+}
+section.out{
+    background:purple
+}
+section.inner {
+    font-family: roman, 'times new roman', times, serif;
+    background: black
+    
 }
 section.form {
     font-family: roman, 'times new roman', times, serif;

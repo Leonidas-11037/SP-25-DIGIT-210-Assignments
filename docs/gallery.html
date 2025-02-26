@@ -4,13 +4,14 @@
      * On Windows, go to the browser and type control + o and browse to find this file to open it.
      * On Mac, go to the browser and type command + o and browse to find this file to open it. 
      Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
+     Protip: use <span> on text </span> within <p> elements with attributes to change its look.
     -->
     <head>
         <!-- What's in the <head> element is a "meta" area not for display. 
             It holds important information about the website's contents.
             The text inside the <title> element does show in the top tab of a web browser. 
              The <head> is where we will include info about styling the site, too. -->
-        <title>HTML Exercise 2</title>
+        <title>My Personal Gallery</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Here is a place where we can add a little styling code called CSS to this page. 
@@ -25,8 +26,12 @@
             <a href="gallery.html">About Me</a>
             <a href="portfolio.html">Portfolio</a>
         </nav>
+        <p/>
+        <audio controls="controls" autoplay="autoplay" loop="loop">
+            <source src="audio/The%20King%20of%20Fighters%20%2097%20%20Mirthless.mp4" type="audio/mp4" />
+        </audio>
         <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>More About Me</h1>
+        <section class="inner1"><h1>More About Me</h1>
         <img src="images/film-thumb.PNG" style="width:50%;height:50%"/>
         <p class="mono"><i>Placeholder opening self portrait. Replace before this goes live.</i></p>
         <p>Here's some info about myself, where I've been and what I like. Just don't go in here looking for a weakness. I will know.</p>
@@ -37,7 +42,7 @@
         <img src="images/Arcade.jpg" style="width:45%;height:45%" />
         <p class="mono"><i>A local arcade I went to in Texas years ago. This PvZ arcade game recenty got uploaded and preserved on the internet.</i></p>
         <img src="images/Factory.jpg" style="width:45%;height:45%" />
-        <p class="mono"><i>A factory we passed through during one of our southern travels.</i></p>
+        <p class="mono"><i>A factory we passed through during one of our southern travels.</i></p></section>
         <h2>Favorite Tracks</h2>
         <p>It's not copyright infringement if I link to someone else's rip instead of mine. Right?</p>
         <p style="background:red">And now, I shall combine what I observed and create an <q>ordered list</q> using <q>href</q> of tracks from games I like:</p>
@@ -58,4 +63,5 @@
         <p class="mono">You may 1v1 me on Friday nights at 8 PM at the lounge.</p>
         <p>And that's all I found as of now. This may seem a little ahead, but I do find the various ways to edit these files very interesting.</p>
     </body>
+    <!--  -->
 </html>

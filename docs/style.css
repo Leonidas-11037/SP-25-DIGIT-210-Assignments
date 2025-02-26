@@ -1,6 +1,7 @@
-p.pad{
+p.test{
     padding-left: 5em;
-    padding-right: 5em
+    padding-right: 5em;
+    border: 1px solid black
 }
 body {
     background: #d889fa;
@@ -22,7 +23,7 @@ img#PSB {
 }
 
 section {
-    background: coral;
+    background: none;
     width: 90%;
     margin: auto;
     padding: 1em
@@ -37,6 +38,10 @@ section.out{
 section.outer {
     font-family: roman, 'times new roman', times, serif;
     background: black
+    
+}
+section.inner1 {
+    background:#b0b9ff
     
 }
 section.form {

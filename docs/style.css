@@ -4,10 +4,33 @@ p.test{
     border: 1px solid black
 }
 body {
-    background: #d889fa;
+    background: #7710b3;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-
+body.home {
+    height: 100%;
+    background-image:url(images/cyber.png);
+    height: 544px;
+    width: 1088px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+body.home1 {
+    height: 100%;
+    background-image:url(images/cyber.png);
+    height: 544px;
+    width: 1544px;
+    background-repeat: repeat-x;
+    animation: slide 20s linear infinite;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -544px, 0);
+  }
+}
 figure {
     width: 20%;
     background: /*#EFD6F6*/ white;

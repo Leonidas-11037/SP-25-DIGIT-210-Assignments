@@ -9,6 +9,8 @@ body {
 }
 nav.top {
     background:lime;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 body.home {
     height: 100%;

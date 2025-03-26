@@ -7,6 +7,11 @@ body {
     background: #7710b3;
     font-family: "Lucida Console", "Courier New", monospace;
 }
+nav.top {
+    background:lime;
+    padding-left: 5em;
+    padding-right: 5em;
+}
 body.home {
     height: 100%;
     background-image:url(images/cyber.png);

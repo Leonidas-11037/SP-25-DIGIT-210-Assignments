@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
+     * On Windows, go to the browser and type control + o and browse to find this file to open it.
+     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
+     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
+    -->
+    <head>
+        <!-- What's in the <head> element is a "meta" area not for display. 
+            It holds important information about the website's contents.
+            The text inside the <title> element does show in the top tab of a web browser. 
+             The <head> is where we will include info about styling the site, too. -->
+        <title>Text Comparison</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Here is a place where we can add a little styling code called CSS to this page. 
+            I used it to apply a background color to the body element.
+        -->
+        <!-- This code below is called CSS: It stands for Cascading Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <nav class="top">
+            <a href="index.html">Home Page</a>
+            <a href="gallery.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="reflection.html">Reflection</a>
+            <a href="shelf.html">[Digitized Shelf Project]</a>
+            <a href="shelf.html">[Text Comparison]</a>
+        </nav>
+        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
+        <h1>Text Comparison Assignment</h1>
+<section class="outer1">
+    <section class="inner1">
+
+        <p>For this assignment, we were tasked with using software tools tools to analyze multiple texts at once to find similarities between them. The tool I mainly used was AntConc, capable of finding multiple word strings called N-grams and finding how frequent they are what texts they appear in, and what follows and suceeds them.</p>
+        <p>The files I chose to compare was a single file containing the already collected texts of Edgar Allen Poe to compare against 119 other texts from the 19th-century.</p>
+        <img src="images/wordrank.PNG" style="width:40%;height:40%"></img>
+        <p class="mono">A ranking of how often each word appears in all 120 files brought over.</p>
+        <p>When separating the texts into 1 word tokens, the result was 1861041 tokens processed with 43022 of them being unique. To nobody's suprise, the word <i>the</i> it the most used word across all the texts, and it's not even close. Present in all 120 files.</p>
+        <img src="images/wordrankvis.PNG" style="width:75%;height:75%"></img>
+        <p class="mono">For visual reference, here's a graph stacking the 100 most used words against each other.</p>
+        <p> </p>
+        <img src="images/kwicn3-1.PNG"/>
+        <img src="images/kwicn3-2.PNG"/>
+        <p class="mono">Two N-gram 3 phrases being compared to each other. Both provides additional context. 1371465 unique types were processed with this search.</p>
+        <p>The phrase <i>one of the</i> is usually followed up with <i>most</i>. The context before and after is completely different, but it is a pattern in writing style between two completely different archives. Unlike the situation with <i>don't</i> where the 19th century texts are the only ones to even use the word. It's only followed up by the word <i>you</i> or <i>know</i>. One time it was even completely capitalized. It shows that a single common word can be completely left out of a written litterature collection compared to 119 other texts. Why did Poe not use this word? Is there a written work of his that did use it? (Like a letter to someone?)</p>
+        
+        <img src="images/kwicn5.PNG" style="width:40%;height:40%"/>
+        <img src="images/kwicn5-1.PNG"/>
+        <p class="mono">A list of N-gram 5 phrases sorted by total number of appearances. <i>on the part of the</i> is being provided additional context. 1818755 unique types were processed.</p>
+        <p>The phrase <i>on the part of the</i> is only the 7th most used 5 word phrased used across both collections, but unlike <i>don't</i>, it actually used in both collections. It's usually used to adress a person or place. Makes perfect sense considering how it's meant to be used in this context. However, some phrases like <i>president of the united states</i> (and similar phrases) was never used once in Edgar Allen Poe's work.</p>
+        <img src="images/kwicheart.PNG" />
+        <p class="mono">A manual search of the word <i>heart</i> with additional context. There are 1041 instances of the word within the files.</p>
+        <p>Just from looking at these instances, "The Tell-Tale Heart" and "The Raven" was included in the Edgar Allen Poe collection. Seeing as those two are classics, it would be foolish not to. The uses of the word in the rest of the texts each provide a window of the original contexts of radically different sources. Some of them do sound like part of a darker/mysterious poem. I wonder why that is? Perhaps I should start actually reading these. When I have time of course.</p>
+
+    </section>
+</section>
+
+        </body>
+</html>

@@ -1,0 +1,2 @@
+[('o', 11), ('have', 8), ('want', 7), ('know', 7), ('kill', 7), ('use', 6), ('give', 5), ('guess', 5), ('go', 5), ('tell', 5)]
+[('hear', 1), ('save', 1), ('say', 1), ('wear', 1), ('forget', 1), ('pay', 1), ('afford', 1), ('scare', 1), ('love', 1), ('change', 1)]

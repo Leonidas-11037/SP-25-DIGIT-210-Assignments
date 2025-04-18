@@ -81,3 +81,33 @@ section.form {
     background:#b0b9ff
     
 }
+
+/* Dr. B adding a flex container */
+div.flex  { display:flex; width:100%;}
+
+
+div.flex figure img { width: 100%;}
+
+div.flex figure {background:orange;}
+
+div.flex figure.wider {flex:3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

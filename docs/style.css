@@ -94,6 +94,6 @@ div.flex  { display:flex; width:100%;}
 
 div.flex figure img { width: 100%;}
 
-div.flex figure {background:orange;}
+div.flex figure {background:blue;}
 
 div.flex figure.wider {flex:3;}

@@ -32,9 +32,19 @@
         <h1>Text Comparison Assignment</h1>
 <section class="outer1">
     <section class="inner1">
-
+<!-- Note to self: Learn how flex containers work. -->
         <p>For this assignment, we were tasked with using software tools tools to analyze multiple texts at once to find similarities between them. The tool I mainly used was AntConc, capable of finding multiple word strings called N-grams and finding how frequent they are what texts they appear in, and what follows and suceeds them.</p>
         <p>The files I chose to compare was a single file containing the already collected texts of Edgar Allan Poe to compare against 119 other texts from the 19th-century. Poe was a famous poet from Boston MA. Born in 1809 and died at the age of 40 in 1849, he was best known for short yet unerving stories such as <i>The Raven</i> and <i>The Tell-Tale Heart</i>. I thought that is was fair to use some text processing tools to compare Poe's archive from the same century. The other texts in question range from news reports, magazines, etc. It's a mess, which is why we sort these things in the first place.</p>
+        
+        <div class="flex">
+            <figure>
+                <img src="images/wordrank.PNG"></img>
+            </figure>
+            <figure>
+                <img src="images/wordrankvis.PNG"></img>
+            </figure>
+        </div>
+        
         <img src="images/wordrank.PNG" style="width:30%;height:30%"></img>
         <p class="mono">A ranking of how often each word appears in all 120 files brought over.</p>
         <p>When separating the texts into 1 word tokens, the result was 1861041 tokens processed with 43022 of them being unique. To nobody's suprise, the word <i>the</i> is the most used word across all the texts, and it's not even close. Present in all 120 files.</p>

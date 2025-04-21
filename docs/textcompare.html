@@ -29,12 +29,17 @@
             <a href="textcompare.html">[Text Comparison]</a>
         </nav>
         <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Text Comparison Assignment</h1>
+        <h1 style="background:white">Text Comparison Assignment: Edgar Allan Poe vs. 19th Century Texts</h1>
 <section class="outer1">
     <section class="inner1">
 <!-- Note to self: Learn how flex containers work. -->
         <p>For this assignment, we were tasked with using software tools tools to analyze multiple texts at once to find similarities between them. The tool I mainly used was AntConc, capable of finding multiple word strings called N-grams and finding how frequent they are what texts they appear in, and what follows and suceeds them.</p>
         <p>The files I chose to compare was a single file containing the already collected texts of Edgar Allan Poe to compare against 119 other texts from the 19th-century. Poe was a famous poet from Boston MA. Born in 1809 and died at the age of 40 in 1849, he was best known for short yet unerving stories such as <i>The Raven</i> and <i>The Tell-Tale Heart</i>. I thought that is was fair to use some text processing tools to compare Poe's archive from the same century. The other texts in question range from news reports, magazines, etc. It's a mess, which is why we sort these things in the first place.</p>
+        <a href="https://github.com/newtfire/introDH-Hub/blob/master/textFiles/19c-fiction/poe-collection-cleaned.txt">A cleaned copy of the Edgar Allan Poe collection can be found here.</a>
+        <p/>
+        <a href="https://github.com/newtfire/introDH-Hub/tree/master/textFiles/COHA-historic-to-pres">A folder of COHA-historic-to-pres text files can be found here.</a>
+        <p/>
+        <a>The folder of all collected text files can be found here on my repo.</a>
         
         <div class="flex">
             
@@ -44,17 +49,18 @@
             </figure>
             <figure class="wider">
                 <img src="images/wordrankvis.PNG"></img>
-                <figcaption style="color:white">For visual reference, here's a graph stacking the 100 most used words against each other. More frequently usedd words are cooler while less used words are warmer.</figcaption>
+                <figcaption style="color:white">For visual reference, here's a graph stacking the 100 most used words across both Edgar Allan Poe and 19th Century collections against each other. More frequently used words are cooler while less used words are warmer.</figcaption>
             </figure>
 
         </div>
         <p>To nobody's suprise, the word <i>the</i> won the most used word contest with 122744 individual uses across all 120 files. It almost beat <i>of</i> 2 to 1. Makes perfect sense to me considering it's one of the most commonly used words in the English language.</p>
         
         <p> </p>
-        <img src="images/kwicn3-1.PNG"/>
-        <p class="mono">The N-gram 3 phrase <i>one of the</i> being compared to each use of it.</p>
-        <img src="images/kwicn3-2.PNG"/>
-        <p class="mono">The N-gram 3 phrase (somehow) <i>don't</i> being compared to each use of it. Both searches provide additional context. 1371465 unique types were processed with this search.</p>
+        <div class="flex">        <figure class="wider"><img src="images/kwicn3-1.PNG"/>
+        <figcaption style="color:white">The N-gram 3 phrase <i>one of the</i> being compared to each use of it.</figcaption></figure></div>
+        <div class="flex"><figure class="wider">        <img src="images/kwicn3-2.PNG"/>
+<figcaption style="color:white">The N-gram 3 phrase (somehow) <i>don't</i> being compared to each use of it. Both searches provide additional context. 1371465 unique types were processed with this search.</figcaption></figure>
+</div>
         <p>The phrase <i>one of the</i> is usually followed up with <i>most</i>. The context before and after is completely different, but it is a pattern in writing style between two completely different archives. Unlike the situation with <i>don't</i> where the 19th century texts are the only ones to even use the word. It's only followed up by the word <i>you</i> or <i>know</i>. One time it was even completely capitalized. It shows that a single common word can be completely left out of a written litterature collection compared to 119 other texts. Why did Poe not use this word? Is there a written work of his that did use it? (Like a letter to someone?)</p>
         
         <img src="images/kwicn5.PNG" style="width:40%;height:40%"/>

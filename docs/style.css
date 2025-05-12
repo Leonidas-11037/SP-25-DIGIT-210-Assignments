@@ -69,20 +69,15 @@ p.mono a:link {
 
 p.mono a:visited {
   color: #a000e5;
-  background-color: transparent;
-  text-decoration: none;
 }
 
 p.mono a:hover {
   color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
 }
 
 p.mono a:active {
   color: #db526b;
-  background-color: transparent;
-  text-decoration: underline;
+
 }
 
 

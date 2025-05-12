@@ -60,6 +60,32 @@ p.mono {
     background:black;
     color:white
 }
+/*  ebb: coloring links in p.mono on main page */
+
+p.mono a:link {
+  color: #69e848;
+  /*  bright green from page background */
+}
+
+p.mono a:visited {
+  color: #a000e5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+p.mono a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p.mono a:active {
+  color: #db526b;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
 section.out{
     background:purple
 }

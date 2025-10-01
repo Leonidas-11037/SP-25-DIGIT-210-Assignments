@@ -7,7 +7,7 @@ function init() {
     buttons[1].addEventListener('click', changeColor2, false);
     buttons[2].addEventListener('click', newFunction, false);
     buttons[3].addEventListener('click', anotherFunction, false);
-    buttons[4].addEventListener('click', nope(), false);
+    buttons[4].addEventListener('click', nope, false);
 }
 function changeColor() {
     var p1 = document.getElementByTagName("h2")

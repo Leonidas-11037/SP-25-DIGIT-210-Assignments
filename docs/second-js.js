@@ -1,34 +1,42 @@
-window.addEventListener('DOMContentLoaded',rotate,false);
-
-const img = document.getElementById('img');
-const startButton = document.getElementById('startBtn');
-const accelerateButton = document.getElementById('accelBtn');
-
-let angle = 0;
-let speed = 0.1;
-let acceleration = 0.05;
+window.addEventListener('DOMContentLoaded',init,false);
+/*  ebb: For continuous rotation, try the CSS properties for keyframe animation
+ * (or other CSS properties). See https://www.w3schools.com/css/css3_animations.asp 
+ *  */
+let angle = 5;
+let speed = .1;
+let acceleration = 5;
 let rotating = false;
 
-function rotate() {
-    if (rotating===true) return;
-
-    angle += speed;
-    img.style.transform = rotate(angle);
-    // transform: rotate(50)deg);
-    requestAnimationFrame(rotate);
+function init() {
+    const startButton = document.getElementById('startBtn');
+    const accelerateButton = document.getElementById('accelBtn');
+    startButton.addEventListener('click', turn, false);
+   accelerateButton.addEventListener('click', accelerate, false);
+    
 }
 
-// Start rotation
-startButton.addEventListener(); {
-    if (!rotating) {
+
+function turn() {
+const img = document.getElementById('img');
+
+  /*if (rotating===true) return;*/
+  if (rotating==false) {
         rotating = true;
-        rotate();
+        turn();
     }
+    angle += speed;
+    console.log('angle is ' + angle)
+    img.style.transform = 'rotate(' + angle + 'deg)';
+    /*   accelerate(); */
+    // transform: rotate(50)deg);
+    // requestAnimationFrame(turn);
 }
 
-// Increase speed
-accelerateButton.addEventListener(); {
-    if (rotating) {
+
+function accelerate() {// Increase speed
+{
+    if (rotating==true) {
         speed += acceleration;
     }
+}
 }

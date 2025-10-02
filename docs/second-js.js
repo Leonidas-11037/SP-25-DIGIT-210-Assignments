@@ -1,7 +1,14 @@
 window.addEventListener('DOMContentLoaded',init,false);
 /*  ebb: For continuous rotation, try the CSS properties for keyframe animation
  * (or other CSS properties). See https://www.w3schools.com/css/css3_animations.asp 
+ * 
+ * You could even pair this with the classList toggle in JS: 
+ * On click, use classList to add a "on" class to the img.
+ * JavaScript function triggers the classList toggle "on" and makes this:
+ * <img class="rotatable on">
+ * In your CSS, define the keyframes animation for rotation when you have img.rotatable.on { }
  *  */
+ 
 let angle = 5;
 let speed = .1;
 let acceleration = 5;

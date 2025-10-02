@@ -11,6 +11,7 @@ function init() {
 }
 function changeColor() {
     var p1 = document.getElementByTagName("h2")
+    for (var i = 0, length = li.length; i < length; i++)
     { p1.style.backgroundColor = "skyblue";  }
 
     /* here, style is a *property*: the CSS styling of an element:

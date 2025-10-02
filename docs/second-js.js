@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',init,false);
+window.addEventListener('DOMContentLoaded',rotate,false);
 
 const img = document.getElementById('img');
 const startButton = document.getElementById('startBtn');
@@ -10,25 +10,25 @@ let acceleration = 0.05;
 let rotating = false;
 
 function rotate() {
-    if (!rotating) return;
+    if (rotating===true) return;
 
     angle += speed;
-    img.style.transform = `rotate(${angle}deg)`;
-
+    img.style.transform = rotate(angle);
+    // transform: rotate(50)deg);
     requestAnimationFrame(rotate);
 }
 
-// Start rotation on first button click
-startButton.addEventListener('click', () => {
+// Start rotation
+startButton.addEventListener(); {
     if (!rotating) {
         rotating = true;
         rotate();
     }
-});
+}
 
-// Increase speed on second button click
-accelerateButton.addEventListener('click', () => {
+// Increase speed
+accelerateButton.addEventListener(); {
     if (rotating) {
         speed += acceleration;
     }
-});
+}
